@@ -13,14 +13,10 @@ async function startServer() {
     const db = await dbConnect();
     console.log(" Connected to MongoDB");
 
-    
-   
-
-    
     const server = new ApolloServer({
       typeDefs,
       resolvers,
-      introspection: true,  
+      introspection: true,
     });
 
     const { url } = await server.listen({ port: PORT });
