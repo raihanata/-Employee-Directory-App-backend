@@ -9,7 +9,7 @@ type Employee {
     position: String!
     department: String!
     salary: Int! 
-    }
+    }   
     type Query{
 
     getAllEmployees:[Employee]
